@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Ignore X-Frame",
+  "version": "1.0",
+  "description": "Bypass X-Frame-Options for specified websites.",
+  "permissions": ["webRequest", "webRequestBlocking"],
+  "host_permissions": ["*://ui.dev/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "Toggle X-Frame-Options Bypass"
+  }
+}
